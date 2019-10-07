@@ -5,4 +5,4 @@ if [[ $steepVersion != "latest" ]]; then
 	git checkout $steepVersion
 fi
 
-pip install -r /root/steep/requirements.txt
+pip3 install -r /root/steep/requirements.txt
