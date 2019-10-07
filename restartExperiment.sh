@@ -9,4 +9,4 @@ myip="$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*)
 
 #start server on the screen called serverScreen
 screen -S serverScreen -p 0 -X stuff 'cd /root/experiment/files/\n'
-screen -S serverScreen -p 0 -X stuff "python experiment.py -l local -i "$myip"\n"
+screen -S serverScreen -p 0 -X stuff "python3 experiment.py -l local -i "$myip"\n"
