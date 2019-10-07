@@ -5,7 +5,7 @@ apt install python3-dev -y
 apt install python3-pip -y
 
 #server to show files
-python3 -m SimpleHTTPServer 8765
+python3 -m http.server 8765
 
 #install steep python package requirements
 pip3 install setuptools
