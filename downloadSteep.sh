@@ -1,7 +1,7 @@
 #download steep to the folder /root/steep/
 git clone git://github.com/jnromero/steep.git /root/steep/
 cd /root/steep/
-if [ $steepVersion != "latest" ]; then
+if [[ $steepVersion != "latest" ]]; then
 	git checkout $steepVersion
 fi
 
