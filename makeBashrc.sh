@@ -1,3 +1,4 @@
+echo "making .bashrc\n" > /myLog.txt
 cat <<EOT >> /root/.bashrc
 export gitUsername=$gitUsername
 export gitPassword=$gitPassword
@@ -9,3 +10,4 @@ alias logview="vi /tmp/firstboot.log"
 EOT
 
 source /root/.bashrc
+echo ".bashrc made\n" > /myLog.txt
