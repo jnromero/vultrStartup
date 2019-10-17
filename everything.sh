@@ -1,4 +1,5 @@
 /root/scripts/makeBashrc.sh
+/root/scripts/updateNOIP.sh
 /root/scripts/pythonInstall.sh
 /root/scripts/downloadSteep.sh
 /root/scripts/downloadExperiment.sh

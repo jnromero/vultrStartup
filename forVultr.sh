@@ -1,11 +1,17 @@
 #!/bin/sh
 
-export username="xxxxxx"
-export password="xxxxxxx"
+export gitUsername="xxxxxx"
+export gitPassword="xxxxxxx"
 export gitURL="gitURL"
 export steepVersion="latest"
 export experimentVersion="latest"
 
-git clone https://$username:$password@github.com/jnromero/vultrStartup.git /root/scripts/
+export NOIPUsername="none"
+export NOIPPassword="xxxxxxx"
+export NOIPDomain="enter.your.domain.com"
+
+
+
+git clone https://$gitUsername:$gitPassword@github.com/jnromero/vultrStartup.git /root/scripts/
 /root/scripts/everything.sh
 
