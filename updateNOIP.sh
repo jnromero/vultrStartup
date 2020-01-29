@@ -1,4 +1,4 @@
-echo "Updating noip\n" >> /myLog.txt
+echo "Updating noip\n"
 
 git clone https://github.com/mdmower/bash-no-ip-updater.git /root/noip/
 cd /root/noip/
@@ -22,4 +22,4 @@ if [[ $NOIPUsername != "none" ]]; then
 	./noipupdater.sh -c config_sample_updated -i $myip
 fi
 
-echo "noip updated\n" >> /myLog.txt
+echo "noip updated\n"

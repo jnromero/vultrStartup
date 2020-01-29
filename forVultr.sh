@@ -13,5 +13,5 @@ export NOIPDomain="enter.your.domain.com"
 
 
 git clone https://$gitUsername:$gitPassword@github.com/jnromero/vultrStartup.git /root/scripts/
-/root/scripts/everything.sh
+/root/scripts/everything.sh >> /myLog.txt
 

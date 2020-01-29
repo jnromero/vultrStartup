@@ -1,4 +1,4 @@
-echo "Downloading Steep\n" >> /myLog.txt
+echo "Downloading Steep\n"
 #download steep to the folder /root/steep/
 git clone git://github.com/jnromero/steep.git /root/steep/
 cd /root/steep/
@@ -7,4 +7,4 @@ if [[ $steepVersion != "latest" ]]; then
 fi
 
 pip3 install -r /root/steep/requirements.txt
-echo "Steep Downloaded\n" >> /myLog.txt
+echo "Steep Downloaded\n"
