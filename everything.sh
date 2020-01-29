@@ -1,4 +1,4 @@
-/root/scripts/updateNOIP.sh
+# /root/scripts/updateNOIP.sh
 /root/scripts/fileServer.sh
 /root/scripts/makeBashrc.sh
 /root/scripts/pythonInstall.sh
