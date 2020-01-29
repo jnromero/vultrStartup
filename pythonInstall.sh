@@ -9,6 +9,14 @@ apt install python3-dev -y
 apt install python3-pip -y
 echo "python installed\n"
 
+
+echo "Installing net-tools\n"
+#get net-tools to use ifconfig
+apt install net-tools
+echo "net-tools installed\n"
+
+
+
 echo "installing python packages\n"
 #install steep python package requirements
 pip3 install setuptools

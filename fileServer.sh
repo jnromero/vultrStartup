@@ -5,6 +5,3 @@ echo "File Server Started\n"
 
 cp /root/scripts/index.html /index.html
 cp /root/scripts/checkStatusFile.py /checkStatusFile.py
-
-
-
