@@ -17,7 +17,7 @@ function checkFile(){
 	       document.getElementById("demo").innerHTML = xhttp.responseText;
 	    }
 	};
-	xhttp.open("GET", "/checkStatusFile.py", true);
+	xhttp.open("GET", "/cgi-bin/checkStatusFile.py", true);
 	xhttp.send();
 }
 
