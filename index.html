@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<div id="demo">Demo here</div>
+<pre id="demo">Demo here</pre>
 
 
 <script>
@@ -15,6 +15,7 @@ function checkFile(){
 	    if (this.readyState == 4 && this.status == 200) {
 	       // Typical action to be performed when the document is ready:
 	       document.getElementById("demo").innerHTML = xhttp.responseText;
+		   window.scrollTo(0,document.body.scrollHeight);
 	    }
 	};
 	xhttp.open("GET", "/cgi-bin/checkStatusFile.py", true);
