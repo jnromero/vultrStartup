@@ -5,5 +5,6 @@ if [[ $experimentVersion != "" ]]; then
 	if [[ $experimentVersion != "latest" ]]; then
 		git checkout $experimentVersion
 	fi
+	pip3 install -r /root/experiment/requirements.txt
 	echo "Experiment Downloaded\n"
 fi
