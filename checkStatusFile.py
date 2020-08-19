@@ -2,9 +2,12 @@
 
 print("Content-type: text/plain\n") 
 
-filename='/myLog.txt'
-file = open(filename,'r')
-fileData=file.read()
-file.close() 
+try:
+	filename='/myLog.txt'
+	file = open(filename,'r')
+	fileData=file.read()
+	file.close() 
 
-print(fileData) 
+	print(fileData) 
+except:
+	print("There was an error retrieving the file /myLog.txt") 
