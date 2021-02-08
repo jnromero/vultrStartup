@@ -4,6 +4,8 @@ if [[ $steepVersion != "" ]]; then
 	git clone git://github.com/jnromero/steep.git /root/steep/
 	cd /root/steep/
 	if [[ $steepVersion != "latest" ]]; then
+		echo "Reverting to STEEP Version - $steepVersion \n"
+		cd /root/steep/
 		git checkout $steepVersion
 	fi
 
