@@ -7,6 +7,12 @@ if [[ $experimentVersion != "" ]]; then
 		cd /root/experiment/
 		git checkout $experimentVersion
 	fi
-	pip3 install -r /root/experiment/files/requirements.txt
+
+	FILE=/root/experiment/files/requirements.txt
+	if [[ -f "$FILE" ]]; then
+		pip3 install -r $FILE
+	    echo "Experiment specific requirement.txt"
+	fi
+
 	echo "Experiment Downloaded\n"
 fi
