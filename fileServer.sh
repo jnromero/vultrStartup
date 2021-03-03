@@ -1,6 +1,6 @@
 echo "Starting File Server\n"
-cd /
-nohup python3 -m http.server 8765 --cgi > /httpserver.txt 2>&1 &
+cp /root/scripts/fileServer.service /etc/systemd/system/fileServer.service
+systemctl enable fileServer
 echo "File Server Started\n"
 
 mkdir /cgi-bin
