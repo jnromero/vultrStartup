@@ -1,18 +1,18 @@
 #install necessary programs
 echo "Updating apt\n"
 apt-get update -y
-sudo apt install build-essential -y
+sudo apt-get install build-essential -y
 echo "apt updated\n"
 
 echo "Installing python\n"
-apt install python3-dev -y
-apt install python3-pip -y
+apt-get install python3-dev -y
+apt-get install python3-pip -y
 echo "python installed\n"
 
 
 echo "Installing net-tools\n"
 #get net-tools to use ifconfig
-apt install net-tools
+apt-get install net-tools
 echo "net-tools installed\n"
 
 
