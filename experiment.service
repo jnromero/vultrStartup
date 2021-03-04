@@ -8,8 +8,8 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=python3 -u -m http.server 8765 --cgi
-StandardOutput=file:/tmp/httpoutput.log
+ExecStart=python3 -u /root/experiment/files/experiment.py -l local -i IPGOESHERE
+StandardOutput=file:/tmp/experiment.log
 StandardError=inherit
 
 [Install]
