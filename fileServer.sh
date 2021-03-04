@@ -1,6 +1,7 @@
 echo "Starting File Server\n"
 cp /root/scripts/fileServer.service /etc/systemd/system/fileServer.service
 systemctl enable fileServer
+systemctl restart fileServer
 echo "File Server Started\n"
 
 mkdir /cgi-bin
